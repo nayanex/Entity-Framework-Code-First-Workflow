@@ -1,0 +1,13 @@
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\ChapterOneProject.dll.config
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\ChapterOneProject.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\ChapterOneProject.pdb
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\EntityFramework.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\EntityFramework.xml
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\obj\Debug\ChapterOneProject.dll
+C:\Users\nayana.abreu\documents\visual studio 2012\Projects\ChapterOneProject\ChapterOneProject\obj\Debug\ChapterOneProject.pdb

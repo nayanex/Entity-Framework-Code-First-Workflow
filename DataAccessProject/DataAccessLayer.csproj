@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9128C2EA-A08F-46FC-83A6-296FA22FC362}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessProject</RootNamespace>
+    <AssemblyName>DataAccessProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201401271222423_InitialCreate.cs" />
+    <Compile Include="Migrations\201401271222423_InitialCreate.Designer.cs">
+      <DependentUpon>201401271222423_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410201234447_makigDateTypeNullable.cs" />
+    <Compile Include="Migrations\201410201234447_makigDateTypeNullable.Designer.cs">
+      <DependentUpon>201410201234447_makigDateTypeNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410201247355_makigDateTypeNullable_OneWasMissing_Ups.cs" />
+    <Compile Include="Migrations\201410201247355_makigDateTypeNullable_OneWasMissing_Ups.Designer.cs">
+      <DependentUpon>201410201247355_makigDateTypeNullable_OneWasMissing_Ups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410201352482_AddingDataAnnotaionsAnimalType.cs" />
+    <Compile Include="Migrations\201410201352482_AddingDataAnnotaionsAnimalType.Designer.cs">
+      <DependentUpon>201410201352482_AddingDataAnnotaionsAnimalType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Context\VetContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChapterOneProject\ChapterOneProject_Vet.csproj">
+      <Project>{011dbcfe-de8b-4a21-b138-28dcd3d5f7ef}</Project>
+      <Name>ChapterOneProject_Vet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201401271222423_InitialCreate.resx">
+      <DependentUpon>201401271222423_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410201234447_makigDateTypeNullable.resx">
+      <DependentUpon>201410201234447_makigDateTypeNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410201247355_makigDateTypeNullable_OneWasMissing_Ups.resx">
+      <DependentUpon>201410201247355_makigDateTypeNullable_OneWasMissing_Ups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410201352482_AddingDataAnnotaionsAnimalType.resx">
+      <DependentUpon>201410201352482_AddingDataAnnotaionsAnimalType.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
